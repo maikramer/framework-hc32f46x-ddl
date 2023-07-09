@@ -29,7 +29,7 @@
 ;  <o> Stack Size (in Bytes) <0x0-0xFFFFFFFF:8>
 ;</h>
 */
-                .equ        Stack_Size, 0x00000400
+                .equ        Stack_Size, 0x00004400
 
                 .section    .stack
                 .align      3
@@ -47,7 +47,7 @@ __StackTop:
 ;  <o> Heap Size (in Bytes) <0x0-0xFFFFFFFF:8>
 ;</h>
 */
-                .equ        Heap_Size, 0x00000C00
+                .equ        Heap_Size, 0x00003200
 
                 .if         Heap_Size != 0                     /* Heap is provided */
                 .section    .heap
